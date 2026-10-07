@@ -1,0 +1,14 @@
+{
+    "name": "longfie/tfsign-plugin-example",
+    "description": "天方云签示例插件",
+    "type": "library",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "plugin\\example\\": "src/"
+        }
+    }
+}

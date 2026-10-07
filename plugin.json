@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "code": "example",
+  "name": "示例插件",
+  "version": "1.0.0",
+  "description": "演示插件商店发布流程的示例签到",
+  "entrypoint": "plugin\\example\\ExamplePlugin",
+  "sort_order": 900,
+  "credential_types": ["token"],
+  "implementation_status": "ready",
+  "connection_methods": ["credentials"],
+  "credential_labels": {"token": "示例 Token"},
+  "actions": {"daily_sign": {"label": "每日签到"}},
+  "admin_settings": [],
+  "account_settings": [
+    {"key": "dry_run", "type": "boolean", "label": "预演模式", "default": true}
+  ],
+  "task_policy": {},
+  "runtime": {"mode": "runner"}
+}
